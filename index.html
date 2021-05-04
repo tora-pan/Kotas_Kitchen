@@ -4,76 +4,267 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- font awesome cdn-->
-    <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <!-- -->
-    <!-- google fonts-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/journal/bootstrap.min.css" integrity="sha384-QDSPDoVOoSWz2ypaRUidLmLYl4RyoBWI44iA5agn6jHegBxZkNqgm2eHb6yZ5bYs" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
-    <!-- -->
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fixed.css">
     <title>Kota's Kitchen</title>
 </head>
-<body>
-    <header class="header">
-        <div class="container-fluid">
-            <nav class="nav">
-                <a href="index.html" class="logo">
-                    <img src="img/logo.png" alt="logo" class="test">
-                </a>
+<body data-spy="scroll" data-traget="#navbarResponsive">
 
-                <div class="nav__button">
-                    <span class="nav__icon"></span>
-                </div>
+<!-- Start Home Section -->
+<div id="home">
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a href="#" class="navbar-brand"><img src="img/logo.png" alt="website logo">Kota's Kitchen</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#team" class="nav-link">Our Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#menu" class="nav-link">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#reservation" class="nav-link">Reservation</a>
-                    </li>
-                </ul>
-                <ul class="icons">
-                    <li class="icon"><i class="fas fa-search"></i></li>
-                    <li class="icon"><i class="fab fa-twitter"></i></li>
-                    <li class="icon"><i class="fab fa-facebook-f"></i></li>
-                    <li class="icon"><i class="fab fa-instagram"></i></li>
-                </ul>
-            </nav>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#course" class="nav-link">Course</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resources" class="nav-link">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
         </div>
-    </header>
-    <main>
-        <div class="hero" id="hero">
-            <div class="container">
-                <div class="premium-container">
-                    <img src="img/Premium.png" alt="premium" class="premium">
-                    <h3 class="quality">Quality</h3>
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- Start Landing Page -->
+<div class="landing">
+    <div class="home-wrap">
+        <div class="home-inner">
+
+        </div>
+    </div>
+</div>
+
+<div class="caption text-center">
+    <h1>Welcome to my Kitchen</h1>
+    <h3>Looking for a personal chef?</h3>
+    <a class="btn btn-outline-light btn-lg" href="#course">Get Started</a>
+</div>
+    <!-- End Landing Page -->
+
+</div>
+<!-- End Home Section -->
+
+<!-- Start Course Section -->
+<div id="course" class="offset">
+    <div class="col-12 narrow text-center">
+        <h1>Subscribe to a weekly/monthly service for huge discounts</h1>
+        <p class="lead">If you want to enjoy delicious food at a fraction of the cost, check out our monthly 
+                        personal chef service!
+        </p>
+        <a href="#" class="btn btn-secondary btn-md">Enjoy the Savings</a>
+    </div>
+</div>
+<!-- End Course Section -->
+
+<!-- Start Features Section -->
+<div id="features" class="offset">
+    <!-- Start Jumbotron -->
+    <div class="jumbotron">
+        <div class="narrow">
+            <div class="col-12">
+                <h2 class="heading text-center">Features</h2>
+                <div class="heading-underline"></div>
+            </div>
+
+            <!-- CARD SECTION -->
+            <div class="card-deck">
+                <div class="card bg-primary text-white mb-3">
+                  <i class="fas fa-utensils fa-4x text-center mt-4"></i>
+                  <div class="card-body">
+                    <h4 class="card-title">Personal Chef</h4>
+                    <p class="card-text">ここに入るテキストとか考えないとね。You will need to decide what you want to write here. We can decide the headings and icons as well.</p>
+                  </div>
                 </div>
-                
-                <div class="restaurant-title">
-                    <h1 class="title">
-                        Restaurant <br />
-                        & Dishes
-                    </h1>
+                <div class="card bg-secondary text-white mb-3">
+                    <i class="fas fa-child fa-4x text-center mt-4"></i>
+                  <div class="card-body">
+                    <h4 class="card-title">All Ages</h4>
+                    <p class="card-text">ここに入るテキストとか考えないとね。You will need to decide what you want to write here. We can decide the headings and icons as well.</p>
+                  </div>
+                </div>
+                <div class="card bg-primary text-white mb-3">
+                    <i class="fas fa-diagnoses fa-4x text-center mt-4"></i>
+                  <div class="card-body">
+                    <h4 class="card-title">Great for Parties</h4>
+                    <p class="card-text">ここに入るテキストとか考えないとね。You will need to decide what you want to write here. We can decide the headings and icons as well.</p>
+                  </div>
+                </div>
+              </div>
+            <!-- End CARD SECTION -->
+
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="feature">
+
+                    </div>
                 </div>
             </div>
-            <a href="#" class="go-top"><i class="fas fa-arrow-up"></i></a>
         </div>
-    </main>
+    </div>
+    <!-- End Jumbotron -->
+</div>
+<!-- End Features Section -->
+
+<!-- Start Resources Section -->
+<div id="resources" class="offset">
+    <div class="fixed-background">
+        <div class="row dark text-center">
+            <div class="col-12">
+                <h3 class="heading">Made with Love</h3>
+                <div class="heading-underline"></div>
+            </div>
+
+            <div class="col-md-4">
+                <h3>ORGANIC</h3>
+                <div class="feature">
+                    <i class="far fa-heart fa-3x"></i>
+                </div>
+                <p class="lead">ここに入るテキストとか考えないとね。ここに入るテキストとか考えないとね。
+                    ここに入るテキストとか考えないとね。ここに入るテキストとか考えないとね。ここに入るテキストとか考えないとね。
+                    ここに入るテキストとか考えないとね。ここに入るテキストとか考えないとね。ここに入るテキストとか考えないとね。
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <h3>Fusion</h3>
+                <div class="feature">
+                    <i class="far fa-heart fa-3x"></i>
+                </div>
+                <p class="lead">ここに入るテキストとか考えないとね。ここに入るテキストとか考えないとね。
+                    ここに入るテキストとか考えないとね。ここに入るテキストとか考えないとね。ここに入るテキストとか考えないとね。
+                    ここに入るテキストとか考えないとね。ここに入るテキストとか考えないとね。ここに入るテキストとか考えないとね。</p>
+            </div>
+
+            <div class="col-md-4">
+                <h3>FANCY</h3>
+                <div class="feature">
+                    <i class="far fa-heart fa-3x"></i>
+                </div>
+                <p class="lead">ここに入るテキストとか考えないとね。ここに入るテキストとか考えないとね。
+                    ここに入るテキストとか考えないとね。ここに入るテキストとか考えないとね。ここに入るテキストとか考えないとね。
+                    ここに入るテキストとか考えないとね。ここに入るテキストとか考えないとね。ここに入るテキストとか考えないとね。。</p>
+            </div>
+
+        </div>
+        <div class="fixed-wrap">
+            <div class="fixed">
+
+            </div>
+        </div>
+    </div>
+    <!-- End Fixed Background -->
+</div>
+<!-- End Resources Section -->
+
+<!-- Start Clients Section -->
+<div id="clients" class="offset">
+
+    <!-- Start Jumbotron -->
+    <div class="jumbotron">
+        <div class="col-12">
+            <h3 class="heading">Clients</h3>
+            <div class="heading-underline"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 clients">
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- IMAGE SECTION -->
+                        <img src="img/Client_1.jpg" alt="Picture of Client 1">
+                    </div>
+                    <div class="col-md-8">
+                        <!-- COMMENT FROM USER SECTION -->
+                        <blockquote>
+                            <i class="fas fa-quote-left"></i>
+                            I loved having Kota come to our house to cook us dinner last week. 
+                            My whole family wanted to keep eating and eating but I had to stop them
+                            because it was getting late and Kota had another gig to attend to. I can't
+                            wait to have him come back.
+                            <hr class="clients-hr">
+                            <cite>&#8212; -Eric, Small Business Owner</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 clients">
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- IMAGE SECTION -->
+                        <img src="img/Client_2.jpg" alt="Picture of Client 1">
+                    </div>
+                    <div class="col-md-8">
+                        <!-- COMMENT FROM USER SECTION -->
+                        <blockquote>
+                            <i class="fas fa-quote-left"></i>
+                            I loved having Kota come to our house to cook us dinner last week. 
+                            My whole family wanted to keep eating and eating but I had to stop them
+                            because it was getting late and Kota had another gig to attend to. I can't
+                            wait to have him come back.
+                            <hr class="clients-hr">
+                            <cite>&#8212; -Jay, Actor/Muscian</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Jumbotron -->
+
+    <div class="col-12 narrow text-center">
+        <p class="lead">Want to experience a great meal in your own home?</p>
+        <a href="#" class="btn btn-secondary btn-md">Contact Today!</a>
+    </div>
+</div>
+<!-- End Clients Section -->
+
+<!-- Start Contact Section -->
+<div id="contact" class="offset">
+    <footer>
+        <div class="row justify-content-center">
+            <div class="col-md-5 text-center">
+                <img src="img/logo.png" alt="Logo image">
+                <p>Please reach out if you would like to enjoy a little more spice in your life.
+                    For your staff, for your family, everyone deserves to live a little now and a again.
+                </p>
+                <strong>Contact Info</strong>
+                <p>(888)888-888<br>email@kotaskitchen.com</p>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <hr class="socket">
+            &copy; Kota's Kitchen 2021
+        </div>
+    </footer>
+</div>
+<!-- End Contact Section -->
+
+
+    
+
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </html>
